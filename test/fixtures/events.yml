@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2017-02-20
+  name: MyString
+  description: MyText
+  user: one
+  category: one
+  maximum_guests: 1
+  available_spaces: 1
+  house_rules: MyText
+  location: MyString
+  latitude: 1.5
+  longitude: 1.5
+  price_per_head: 1
+
+two:
+  date: 2017-02-20
+  name: MyString
+  description: MyText
+  user: two
+  category: two
+  maximum_guests: 1
+  available_spaces: 1
+  house_rules: MyText
+  location: MyString
+  latitude: 1.5
+  longitude: 1.5
+  price_per_head: 1

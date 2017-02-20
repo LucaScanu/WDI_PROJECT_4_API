@@ -2,18 +2,18 @@
 
 one:
   email: MyString
-  name: MyString
-  bio: MyText
-  image: MyText
   password_digest: MyString
+  image: MyText
   first_name: MyString
   last_name: MyString
+  role: MyString
+  description: MyText
 
 two:
   email: MyString
-  name: MyString
-  bio: MyText
-  image: MyText
   password_digest: MyString
+  image: MyText
   first_name: MyString
   last_name: MyString
+  role: MyString
+  description: MyText
