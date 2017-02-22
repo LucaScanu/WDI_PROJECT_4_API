@@ -2,6 +2,8 @@ class RequestsController < ApplicationController
   before_action :set_request, only: [:show, :update, :destroy]
 
   # GET /requests
+  # Move this into sent_index
+  # Move this into received_index
   def index
     @requests = Request.all
 
@@ -16,6 +18,7 @@ class RequestsController < ApplicationController
   # POST /requests
   def create
     @request = Request.new(request_params)
+    @request.sender_id = @current_user.id
 
     if @request.save
       render json: @request, status: :created, location: @request

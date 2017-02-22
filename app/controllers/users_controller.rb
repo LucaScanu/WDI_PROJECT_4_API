@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
 
-  # GET /users
+  # Move this into chef_index
+  # Move this into guest_index
   def index
     @users = User.all
 
