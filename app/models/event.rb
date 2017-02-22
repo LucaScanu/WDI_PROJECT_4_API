@@ -11,6 +11,8 @@ class Event < ApplicationRecord
   validates :category_id, presence: true
   validates :maximum_guests, presence: true
 
+  before_destroy { requests.clear }
+
   private
 
     def set_available_spaces

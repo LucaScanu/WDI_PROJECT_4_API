@@ -13,10 +13,14 @@ class User < ApplicationRecord
   has_many :received_requests, foreign_key: :receiver_id, class_name: "Request"
 
   before_save :add_default_image
+  before_destroy { events.clear }
+  before_destroy { sent_requests.clear }
+  before_destroy { received_requests.clear }
 
   private
 
     def add_default_image
       self.image = "http://www.fillmurray.com/200/200" if self.image.nil?
     end
+
 end
