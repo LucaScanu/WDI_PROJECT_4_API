@@ -79,6 +79,8 @@ end
 
 event1 = chef.events.create!(date: Date.today.next_week, name: "Party a Luca's house", description: "Better than that place in Spitalfields.", category_id: Category.find_by_name("Italian").id, maximum_guests: 2, house_rules: "You must bring a bottle of wine.", location: "The Relay Building, 1 Commercial St, London E1 7PT", latitude: 51.515529, longitude: -0.072525, price_per_head: 20)
 
+event2 = chef.events.create!(date: Date.today.next_week, name: "Spanish tapas", description: "Selection of tapas following my grandma recipes.", category_id: Category.find_by_name("Spanish").id, maximum_guests: 6, house_rules: "BYO.", location: "141 Commercial St, London E1 7PT", latitude: 51.515529, longitude: -0.072525, price_per_head: 15, image:"http://www.fillmurray.com/300/300")
+
 request1 = guest1.sent_requests.create!(event: event1)
 request1.status = "accepted"
 request1.save
