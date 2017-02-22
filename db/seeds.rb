@@ -3,11 +3,11 @@ Category.destroy_all
 Event.destroy_all
 Request.destroy_all
 
-chef = User.create!(email: "luca@luca.com", password: "password", password_confirmation: "password", image: "http://fillmurray.com.300/300", first_name: "Luca", last_name: "Chef")
+chef = User.create!(email: "luca@luca.com", password: "password", password_confirmation: "password", image: "http://www.fillmurray.com/100/100", first_name: "Luca", last_name: "Chef")
 
-guest1 = User.create!(email: "richard@richard.com", password: "password", password_confirmation: "password", image: "http://fillmurray.com.300/300", first_name: "Richard", last_name: "Guest")
+guest1 = User.create!(email: "richard@richard.com", password: "password", password_confirmation: "password", image: "http://www.fillmurray.com/400/800", first_name: "Richard", last_name: "Guest")
 
-guest2 = User.create!(email: "alex@alex.com", password: "password", password_confirmation: "password", image: "http://fillmurray.com.300/300", first_name: "Alex", last_name: "Guest")
+guest2 = User.create!(email: "alex@alex.com", password: "password", password_confirmation: "password", image: "http://www.fillmurray.com/800/400", first_name: "Alex", last_name: "Guest")
 
 [
   "Afghan",
@@ -83,6 +83,6 @@ request1 = guest1.sent_requests.create!(event: event1)
 request1.status = "accepted"
 request1.save
 
-request2 = guest2.sent_requests.create!(event: event1)
-request2.status = "accepted"
-request2.save
+# request2 = guest2.sent_requests.create!(event: event1)
+# request2.status = "accepted"
+# request2.save
