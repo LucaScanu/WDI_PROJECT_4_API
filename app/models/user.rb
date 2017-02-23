@@ -19,8 +19,8 @@ class User < ApplicationRecord
 
   private
 
-    def add_default_image
-      self.image = "http://www.fillmurray.com/200/200" if self.image.nil?
-    end
+def add_default_image
+  self.image = "http://www.fillmurray.com/200/200" if self.image.nil?
+end
 
 end

@@ -3,7 +3,7 @@ Category.destroy_all
 Event.destroy_all
 Request.destroy_all
 
-chef = User.create!(email: "luca@luca.com", password: "password", password_confirmation: "password", image: "http://www.fillmurray.com/100/100", first_name: "Luca", last_name: "Chef")
+chef = User.create!(email: "luca@luca.com", password: "password", password_confirmation: "password", image: "http://www.fillmurray.com/100/100", first_name: "Luca", last_name: "Chef", role: "chef", description: "Born with a passion for food")
 
 guest1 = User.create!(email: "richard@richard.com", password: "password", password_confirmation: "password", image: "http://www.fillmurray.com/400/800", first_name: "Richard", last_name: "Guest")
 
